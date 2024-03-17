@@ -128,6 +128,7 @@ module simple_tb import ariane_pkg::*; #(
         fetch_entry_ready_i = 1'b0; // No new instruction
         we_gp_i = 1'b1;
         waddr_i = 3; // I4 commit
+        $finish;
     end
 
     renaming_map i_renaming_map (

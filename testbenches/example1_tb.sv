@@ -178,6 +178,7 @@ module example1_tb import ariane_pkg::*; #(
         fetch_entry_ready_i = 1'b0; // No new instruction
         we_gp_i = 1'b1;
         waddr_i = 0; // I8 commit
+        $finish;
     end
 
     renaming_map i_renaming_map (
